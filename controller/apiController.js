@@ -14,7 +14,7 @@ module.exports = new class apiController extends controller {
 
     // Async function to retrieve all data from the 'owner' model
     allOwner = asyncHandler(async (req, res) => {
-        const ownerData = await owner(); // Retrieve data using the 'owner' model
+        const ownerData = await road(); // Retrieve data using the 'owner' model
         this.successResponse(res, ownerData); // Send data as a success JSON response to the client
     });
 
